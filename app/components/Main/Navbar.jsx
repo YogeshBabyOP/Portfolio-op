@@ -12,7 +12,7 @@ const Navbar = () => {
               alt="BMW Logo"
               width={50}
               height={50}
-              className="animate-spin-slow"
+              className="animate-spin-slow select-none"
             />
           </div>
 
