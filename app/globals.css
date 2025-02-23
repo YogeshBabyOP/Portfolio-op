@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,3 +24,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } 
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 0.00002s linear infinite;
+}

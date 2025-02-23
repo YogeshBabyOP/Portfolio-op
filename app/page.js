@@ -1,15 +1,28 @@
-// import Button from "./components/Button";
 "use client";
-import {Button } from "@headlessui/react"
 import StarsCanvas from "./components/Main/StarCanvas";
+import Navbar from "./components/Main/Navbar";
+import About from "./components/Main/About";
+import Skills from "./components/Main/Skills";
+import Projects from "./components/Main/Projects";
+import Contact from "./components/Main/Contact";
+
 export default function Home() {
   return (
     <>
       {/* <StarsCanvas /> */}
-
-      <div className="absolute top-0 left-0 right-0 z-[30] flex justify-center items-center h-20">
-        <Button>Click Me</Button>
-      </div>
+      <Navbar />
+      <section id="about" className="min-h-screen">
+        <About />
+      </section>
+      <section id="skills" className="min-h-screen">
+        <Skills />
+      </section>
+      <section id="projects" className="min-h-screen">
+        <Projects />
+      </section>
+      <section id="connect" className="min-h-screen">
+        <Contact />
+      </section>
     </>
   );
 }
