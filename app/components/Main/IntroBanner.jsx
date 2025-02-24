@@ -12,6 +12,7 @@ function generateSparkles(count) {
 }
 
 const IntroBanner = () => {
+  // op
   const [showIntro, setShowIntro] = useState(true);
   const [sparkles, setSparkles] = useState([]);
 
