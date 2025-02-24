@@ -11,13 +11,13 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
-    "@react-three/drei": "^10.0.0",
+    "@react-three/drei": "^10.0.1",
     "@react-three/fiber": "^9.0.4",
     "framer-motion": "^12.4.7",
     "interactjs": "^1.10.27",
     "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "three": "^0.173.0",
     "typewriter-effect": "^2.21.0"
   },
