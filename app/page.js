@@ -5,11 +5,13 @@ import About from "./components/Main/About";
 import Skills from "./components/Main/Skills";
 import Projects from "./components/Main/Projects";
 import Contact from "./components/Main/Contact";
+import IntroBanner from "./components/Main/IntroBanner";
 
 export default function Home() {
   return (
     <>
-      {/* <StarsCanvas /> */}
+      <StarsCanvas />
+      <IntroBanner></IntroBanner>
       <Navbar />
       <section id="about" className="min-h-screen">
         <About />

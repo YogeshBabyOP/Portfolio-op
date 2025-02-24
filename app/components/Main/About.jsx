@@ -1,18 +1,90 @@
-import React from 'react';
-import StarsCanvas from './StarCanvas';
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import Type from "@/constants/type"; // Adjust this path if necessary
 
 const About = () => {
-    return (
-        <>
-        <StarsCanvas></StarsCanvas>
-        <div className="flex flex-col items-center justify-center min-h-screen bg-black-100">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">About Us</h1>
-            <p className="text-lg text-gray-600 text-center max-w-2xl">
-                Welcome to our application. We are dedicated to providing the best service possible. Our team is committed to excellence and we strive to exceed your expectations.
-            </p>
+  return (
+    <>
+      <section
+        id="about"
+        className="mx-11 relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-black-100 px-4 sm:px-10"
+      >
+        {/* Text Section: Always first (order-1) */}
+        <div className="order-1 w-full md:w-1/2 text-center md:text-left">
+          <p className="text-white text-3xl mb-2">
+            Hi There!{" "}
+            <span className="inline-block animate-wave">👋</span>
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-mono mb-4 font-serif">
+            <span className="text-red-100">I’m</span>{" "}
+            <span className="text-purple-500">Yogesh</span>
+          </h1>
+          <div className="my-11 text-lg sm:text-3xl text-purple-400 font-serif">
+            <Type />
+          </div>
         </div>
-        </>
-    );
+
+        {/* Image Section: Always second (order-2) */}
+        <div className="order-2 w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+          <div className="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] animate-float">
+            <Image
+              src="/images/astro.png"
+              alt="Astronaut Image"
+              fill
+              className="object-cover rounded-full select-none"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CSS Animations */}
+      <style jsx>{`
+        @keyframes wave {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(14deg);
+          }
+          20% {
+            transform: rotate(-8deg);
+          }
+          30% {
+            transform: rotate(14deg);
+          }
+          40% {
+            transform: rotate(-4deg);
+          }
+          50% {
+            transform: rotate(10deg);
+          }
+          60%, 100% {
+            transform: rotate(0deg);
+          }
+        }
+        .animate-wave {
+          animation: wave 1.5s infinite;
+          transform-origin: 70% 70%;
+        }
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        .animate-float {
+          animation: float 3s infinite ease-in-out;
+        }
+      `}</style>
+    </>
+  );
 };
 
 export default About;
