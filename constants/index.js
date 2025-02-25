@@ -184,10 +184,10 @@ export const Skill_data = [
       height: 40,
     },
     {
-      skill_name: "Fire base",
-      Image: "/images/firebase.png",
-      width: 55,
-      height: 55,
+      skill_name: "Chess",
+      Image: "/images/chess.png",
+      width: 75,
+      height: 75,
     },
     {
       skill_name: "Postger SQL",
