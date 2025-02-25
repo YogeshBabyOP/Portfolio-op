@@ -1,30 +1,96 @@
-import React from 'react';
-
-const Skills = () => {
+import {
+    Backend_skill,
+    Frontend_skill,
+    Full_stack,
+    Other_skill,
+    Skill_data,
+  } from "@/constants";
+  import React from "react";
+  import SkillDataProvider from "./SkillDataProvider";
+  import SkillText from "./SkillText";
+  
+  const Skills = () => {
     return (
-        <section className="py-16 bg-black">
-            <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {/* Skill items can be added here */}
-                    <div className="p-6 bg-white rounded-lg shadow-md">
-                        <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-                        <p className="text-gray-600">HTML, CSS, JavaScript, React</p>
-                    </div>
-                    
-                    <div className="p-6 bg-white rounded-lg shadow-md">
-                        <h3 className="text-xl font-semibold mb-2">Backend Development</h3>
-                        <p className="text-gray-600">Node.js, Express, MongoDB</p>
-                    </div>
-                    
-                    <div className="p-6 bg-white rounded-lg shadow-md">
-                        <h3 className="text-xl font-semibold mb-2">Other Tools</h3>
-                        <p className="text-gray-600">Git, GitHub, VS Code</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section
+        id="skills"
+        className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
+        style={{ transform: "scale(0.9" }}
+      >
+        <SkillText />
+  
+        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+          {Skill_data.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+          ))}
+        </div>
+  
+        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+          {Frontend_skill.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+          ))}
+        </div>
+        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+          {Backend_skill.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+          ))}
+        </div>
+        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+          {Full_stack.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+          ))}
+        </div>
+        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+          {Other_skill.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+          ))}
+        </div>
+  
+        <div className="w-full h-full absolute">
+          <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
+            <video
+              className="w-full h-auto"
+              preload="false"
+              playsInline
+              loop
+              muted
+              autoPlay
+              src="/images/cards-video.webm"
+            />
+          </div>
+        </div>
+      </section>
     );
-};
-
-export default Skills;
+  };
+  
+  export default Skills;
+  
