@@ -6,12 +6,16 @@ import Skills from "./components/Main/Skills";
 import Projects from "./components/Main/Projects";
 import Contact from "./components/Main/Contact";
 import IntroBanner from "./components/Main/IntroBanner";
-
 export default function Home() {
   return (
     <>
+    <div className="bg-black">
+
+    
       <StarsCanvas />
-      <IntroBanner></IntroBanner>
+      <section className="container">
+        <IntroBanner />
+      </section>
       <Navbar />
       <section id="about" className="min-h-screen">
         <About />
@@ -19,12 +23,14 @@ export default function Home() {
       <section id="skills" className="min-h-screen">
         <Skills />
       </section>
-      <section id="projects" className="min-h-screen">
+      {/* <section id="projects" className="min-h-screen">
         <Projects />
       </section>
       <section id="connect" className="min-h-screen">
         <Contact />
-      </section>
+        
+      </section> */}
+      </div>
     </>
   );
 }

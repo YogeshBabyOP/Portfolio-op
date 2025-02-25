@@ -14,14 +14,16 @@ const About = () => {
         {/* Text Section: Always first (order-1) */}
         <div className="order-1 w-full md:w-1/2 text-center md:text-left">
           <p className="text-white text-3xl mb-2">
-            Hi There!{" "}
-            <span className="inline-block animate-wave">👋</span>
+            Hi There! <span className="inline-block animate-wave">👋</span>
           </p>
-          <h1 className="text-4xl sm:text-5xl font-mono mb-4 font-serif">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 font-sans">
             <span className="text-red-100">I’m</span>{" "}
-            <span className="text-purple-500">Yogesh</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500">
+              {" "}
+              Yogesh{" "}
+            </span>
           </h1>
-          <div className="my-11 text-lg sm:text-3xl text-purple-400 font-serif">
+          <div className="my-11 text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-serif">
             <Type />
           </div>
         </div>
@@ -60,7 +62,8 @@ const About = () => {
           50% {
             transform: rotate(10deg);
           }
-          60%, 100% {
+          60%,
+          100% {
             transform: rotate(0deg);
           }
         }
