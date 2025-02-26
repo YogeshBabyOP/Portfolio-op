@@ -36,17 +36,17 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "React Query",
-      Image: "/images/reactquery.png",
+      skill_name: "Meteial UI",
+      Image: "/images/mui.png",
       width: 80,
       height: 80,
     },
-    {
-      skill_name: "Type Script",
-      Image: "/images/ts.png",
-      width: 80,
-      height: 80,
-    },
+    // {
+    //   skill_name: "Type Script",
+    //   Image: "/images/ts.png",
+    //   width: 80,
+    //   height: 80,
+    // },
     {
       skill_name: "Next js 13",
       Image: "/images/next.png",
@@ -60,23 +60,23 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "Stripe Payment",
-      Image: "/images/stripe.webp",
-      width: 80,
+      skill_name: "App Write",
+      Image: "/images/appwrite.png",
+      width: 85,
       height: 80,
     },
     {
-      skill_name: "Node js",
-      Image: "/images/node-js.png",
+      skill_name: "Emotion js",
+      Image: "/images/emotion.png",
       width: 80,
       height: 80,
     },
-    {
-      skill_name: "Mongo db",
-      Image: "/images/mongodb.png",
-      width: 40,
-      height: 40,
-    },
+    // {
+    //   skill_name: "Mongo db",
+    //   Image: "/images/mongodb.png",
+    //   width: 40,
+    //   height: 40,
+    // },
   
   ];
   
@@ -177,15 +177,10 @@ export const Skill_data = [
       width: 80,
       height: 80,
     },
+    
     {
-      skill_name: "Mongo db",
-      Image: "/images/mongodb.png",
-      width: 40,
-      height: 40,
-    },
-    {
-      skill_name: "Chess",
-      Image: "/images/chess.png",
+      skill_name: "Docker",
+      Image: "/images/docker.webp",
       width: 75,
       height: 75,
     },
@@ -196,9 +191,15 @@ export const Skill_data = [
       height: 70,
     },
     {
+      skill_name: "Mongo db",
+      Image: "/images/mongodb.png",
+      width: 42,
+      height: 40,
+    },
+    {
       skill_name: "My SQL",
       Image: "/images/mysql.png",
-      width: 70,
+      width: 73,
       height: 70,
     },
     {
@@ -209,7 +210,7 @@ export const Skill_data = [
     },
     {
       skill_name: "Graphql",
-      Image: "/images/graphql.png",
+      Image: "/images/git-com.png",
       width: 80,
       height: 80,
     },
@@ -223,15 +224,15 @@ export const Skill_data = [
       height: 70,
     },
     {
-      skill_name: "Tauri",
-      Image: "/images/tauri.svg",
-      width: 70,
-      height: 70,
+      skill_name: "Pubg",
+      Image: "/images/bgmi.png",
+      width: 93,
+      height: 85,
     },
     {
-      skill_name: "Docker",
-      Image: "/images/docker.webp",
-      width: 70,
+      skill_name: "Chess",
+      Image: "/images/chess.png",
+      width: 80,
       height: 70,
     },
   

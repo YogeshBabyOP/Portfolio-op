@@ -5,7 +5,7 @@ import { Socials } from "@/constants";
 const Navbar = () => {
   return (
     
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-3 sm:px-4 md:px-10">
+    <div className="select-none w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-3 sm:px-4 md:px-10">
       <div className="w-full h-full flex items-center justify-between">
         {/* Logo and Name */}
         <a href="#about" className="flex items-center flex-shrink-0">

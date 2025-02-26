@@ -26,10 +26,14 @@ const About = () => {
           <div className="my-11 text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-serif">
             <Type />
           </div>
+
+          {/* <div className="text-white text-lg sm:text-xl">
+            yogesh is a software engineer who loves to build web applications
+          </div> */}
         </div>
 
         {/* Image Section: Always second (order-2) */}
-        <div className="order-2 w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+        <div className="order-2 w-full md:w-1/2  flex justify-center md:justify-end mt-6 md:mt-0">
           <div className="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] animate-float">
             <Image
               src="/images/astro.png"

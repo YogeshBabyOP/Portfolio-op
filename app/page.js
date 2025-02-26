@@ -13,23 +13,32 @@ export default function Home() {
 
     
       <StarsCanvas />
+
       {/* <section className="container">
         <IntroBanner />
       </section> */}
+
       <Navbar />
+
+
       <section id="about" className="min-h-screen">
         <About />
       </section>
+
+
       <section id="skills" className="min-h-screen">
         <Skills />
       </section>
-      {/* <section id="projects" className="min-h-screen">
+
+
+      <section id="projects" className="min-h-screen">
         <Projects />
       </section>
-      <section id="connect" className="min-h-screen">
-        <Contact />
-        
-      </section> */}
+      
+      {/* <section id="contact" className="min-h-screen"> */}
+        {/* <Contact /> */}
+      {/* </section> */}
+
       </div>
     </>
   );
