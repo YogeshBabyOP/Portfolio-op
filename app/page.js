@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
 
-      <section id="skills" className="min-h-screen">
+      <section id="skills" className="min-h-screen bg-black">
         <Skills />
       </section>
 

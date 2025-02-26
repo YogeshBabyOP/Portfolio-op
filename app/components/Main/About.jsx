@@ -23,7 +23,7 @@ const About = () => {
               Yogesh{" "}
             </span>
           </h1>
-          <div className="my-11 text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-serif">
+          <div className="my-11 text-[23px] sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-serif">
             <Type />
           </div>
 
