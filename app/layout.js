@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 import "./globals.css";
+import Script from "next/script";
 
 
 export const metadata = {
@@ -9,10 +10,39 @@ export const metadata = {
   icons: "/images/mehsii.jpg",
 };
 
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en" className={inter.className}>
+//       <body>{children}</body>
+//     </html>
+//   )
+// }
+
+// layout.js
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        {/* Load the Google Analytics script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-929GZGYZHM"
+          strategy="afterInteractive"
+        />
+        {/* Initialize Google Analytics */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-929GZGYZHM', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
-  )
+  );
 }
