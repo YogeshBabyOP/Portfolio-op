@@ -244,6 +244,41 @@ export const Skill_data = [
     },
   
   ];
+
+  export const projects = [
+    {
+      name: "Portfolio Website",
+      description: "Personal portfolio website built with React and TailwindCSS",
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      tags: ["React", "TailwindCSS", "Vite"],
+      github: "https://github.com/yourusername/portfolio",
+      demo: "https://yourportfolio.com"
+    },
+    {
+      name: "E-commerce Platform",
+      description: "A full-stack e-commerce solution with payment integration",
+      image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2089&q=80",
+      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      github: "https://github.com/yourusername/ecommerce",
+      demo: "https://yourecommerce.com"
+    },
+    {
+      name: "Weather App",
+      description: "Real-time weather application with location tracking",
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      tags: ["React", "OpenWeather API", "Geolocation"],
+      github: "https://github.com/yourusername/weather-app",
+      demo: "https://yourweatherapp.com"
+    },
+    {
+      name: "Task Management App",
+      description: "A productivity tool for organizing tasks and projects",
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+      tags: ["React", "Firebase", "Redux"],
+      github: "https://github.com/yourusername/task-app",
+      demo: "https://yourtaskapp.com"
+    }
+  ];
   
   
   
