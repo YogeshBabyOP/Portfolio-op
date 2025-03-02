@@ -30,9 +30,9 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="/images/aroma.png"
+          src="/images/aroma3.png"
           title="Aroma Alike"
-          description="Find fragrances that match your favorites perfumes and explore new aromas effortlessly! 🔥🍾"
+          description="Find fragrances that match your favorites perfumes and explore the new aromas effortlessly! 🔥🍾"
           githubLink="https://github.com/YogeshBabyOP/aromaalike"
           demoLink="https://aromaalike.vercel.app/"
         />
@@ -46,7 +46,7 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="/images/todo2.png"
+          src="/images/todo.png"
           title="Task Manager"
           description="A simple task manager to stay organized and boost productivity! 🚀🤪"
           githubLink="https://github.com/YogeshBabyOP/Todo-App"

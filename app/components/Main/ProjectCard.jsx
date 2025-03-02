@@ -13,7 +13,7 @@ const ProjectCard = ({ src, title, description, githubLink, demoLink }) => {
           src={src}
           alt={title}
           layout="fill"
-          objectFit="contain"
+          objectFit="cover"
           className="rounded-t-lg"
         />
       </div>
@@ -21,7 +21,16 @@ const ProjectCard = ({ src, title, description, githubLink, demoLink }) => {
       {/* Bottom: Text & icons */}
       <div className="flex flex-col justify-between flex-1 p-4">
         <div>
-          <h1 className="text-xl font-semibold text-white">{title}</h1>
+          <h1
+            className="text-xl font-semibold"
+            style={{
+              background: "linear-gradient(45deg,#f06595, #845ef7)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            {title}
+          </h1>
           <p className="text-gray-300 mt-2">{description}</p>
         </div>
 
