@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Button } from "@headlessui/react";
 import Image from "next/image";
 import Type from "@/constants/type"; // Adjust this path if necessary
 

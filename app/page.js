@@ -14,9 +14,9 @@ export default function Home() {
     
       <StarsCanvas />
 
-      {/* <section className="container">
+      <section className="container">
         <IntroBanner />
-      </section> */}
+      </section>
 
       <Navbar />
 
