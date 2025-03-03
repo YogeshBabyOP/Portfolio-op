@@ -16,14 +16,14 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-20 px-10">
         <ProjectCard
           src="/images/confetti.png"
-          title="Confetti Wind"
+          title="Confetti Game"
           description="An interactive website with playful confetti animations for a joyful and engaging experience.🎊✨"
           githubLink="https://github.com/YogeshBabyOP/Confettii"
           demoLink="https://confettii-op.vercel.app/"
         />
         <ProjectCard
           src="/images/affh.png"
-          title="Aped Far From Home"
+          title="Apes Far From Home"
           description="An adventurous and immersive project featuring apes on a wild journey beyond their home! 🛸🐒"
           githubLink="https://github.com/YogeshBabyOP"
           demoLink="http://www.apesfarfromhome.com/"
@@ -55,7 +55,7 @@ const Projects = () => {
 
         <ProjectCard
           src="/images/sync.png"
-          title="Sync Tunes"
+          title="Sync The Tunes"
           description="Create or join synced music rooms! 🎧 The host controls the vibe! 🚀💃🎵"
           githubLink="https://github.com/YogeshBabyOP/Musicc"
           demoLink="https://github.com/YogeshBabyOP"

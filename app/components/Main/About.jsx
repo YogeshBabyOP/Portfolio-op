@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "@headlessui/react";
 import Image from "next/image";
-import Type from "@/constants/type"; // Adjust this path if necessary
+import Type from "@/constants/type"; 
 
 const About = () => {
   return (
@@ -12,7 +12,6 @@ const About = () => {
         id="about"
         className="mx-11 relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-black-100 px-4 sm:px-10"
       >
-        {/* Text Section: Always first (order-1) */}
         <div className="order-1 w-full md:w-1/2 text-center md:text-left">
           <p className="text-white text-3xl mb-2">
             Hi There! <span className="inline-block animate-wave">👋</span>
@@ -32,8 +31,8 @@ const About = () => {
             yogesh is a software engineer who loves to build web applications
           </div> */}
         </div>
+        
 
-        {/* Image Section: Always second (order-2) */}
         <div className="order-2 w-full md:w-1/2  flex justify-center md:justify-end mt-6 md:mt-0">
           <div className="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] animate-float">
             <Image
@@ -46,7 +45,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* CSS Animations */}
       <style jsx>{`
         @keyframes wave {
           0% {

@@ -6,14 +6,13 @@ import { inSphere } from "maath/random";
 function StarBackground(props) {
   const ref = useRef();
   
-  // Ensure positions are properly generated
   const sphere = useMemo(() => {
-    const positions = new Float32Array(2000 * 3); // Correct size
-    return inSphere(positions, { radius: 1.2 }).slice(); // Ensure valid array
+    const positions = new Float32Array(2000 * 3); 
+    return inSphere(positions, { radius: 1.2 }).slice();
   }, []);
 
   console.log("Sphere Data:", sphere);
-  console.log("Has NaN:", sphere.some((val) => isNaN(val))); // Debugging
+  console.log("Has NaN:", sphere.some((val) => isNaN(val))); 
 
   useFrame((_, delta) => {
     if (ref.current) {

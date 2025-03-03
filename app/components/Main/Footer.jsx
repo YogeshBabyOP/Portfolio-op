@@ -3,18 +3,17 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer style={styles.footer}>
-            <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} YOGESH, Inc. All rights reserved.</p>
         </footer>
     );
 };
 
 const styles = {
     footer: {
-        position: 'fixed',
         bottom: 0,
         width: '100%',
-        backgroundColor: '#333',
-        color: '#fff',
+        backgroundColor: 'transparent',
+        color: 'gray',
         textAlign: 'center',
         padding: '10px 0',
     },

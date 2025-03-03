@@ -1,3 +1,75 @@
+export const leetcode1 = [
+  
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc10.png",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc8.png",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc7.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc4.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc3.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc2.png",
+    width: 80,
+    height: 80,
+  }, 
+]
+
+
+export const leetcode2 = [
+  
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc9.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc6.png",
+    width: 80,
+    height: 80,
+  },
+]
+
+export const leetcode3 = [
+  
+  {
+    skill_name: "Leetcode",
+    Image: "/images/lc1.png",
+    width: 80,
+    height: 80,
+  },
+  
+]
+
+
+
 export const Skill_data = [
     {
       skill_name: "Html 5",

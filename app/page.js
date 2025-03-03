@@ -4,8 +4,9 @@ import Navbar from "./components/Main/Navbar";
 import About from "./components/Main/About";
 import Skills from "./components/Main/Skills";
 import Projects from "./components/Main/Projects";
-import Contact from "./components/Main/Contact";
 import IntroBanner from "./components/Main/IntroBanner";
+import Contact from "./components/Main/Contact";
+import Footer from "./components/Main/Footer";
 export default function Home() {
   return (
     <>
@@ -35,10 +36,12 @@ export default function Home() {
         <Projects />
       </section>
       
-      {/* <section id="contact" className="min-h-screen"> */}
-        {/* <Contact /> */}
-      {/* </section> */}
+       {/* <section id="contact" className="min-h-screen"> 
+         <Contact /> 
+         
+       </section>  */}
 
+      <Footer />
       </div>
     </>
   );
