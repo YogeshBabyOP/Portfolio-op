@@ -56,7 +56,7 @@ const Projects = () => {
         <ProjectCard
           src="/images/sync.png"
           title="Sync The Tunes"
-          description="Create or join synced music rooms! 🎧 The host controls the vibe! 🚀💃🎵"
+          description="Create or join synced music rooms! 🎧 The host controls the vibe! 💃🎵"
           githubLink="https://github.com/YogeshBabyOP/Musicc"
           demoLink="https://github.com/YogeshBabyOP"
         />

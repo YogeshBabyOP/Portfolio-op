@@ -1,8 +1,7 @@
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
 import Script from "next/script";
-
 
 export const metadata = {
   title: "Yogesh Tumma",
@@ -20,11 +19,12 @@ export const metadata = {
 
 // layout.js
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <head>
+        <link rel="icon" href="/images/mehsii.jpg" type="image/jpeg" />
+
         {/* Load the Google Analytics script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-929GZGYZHM"
