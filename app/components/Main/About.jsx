@@ -119,7 +119,6 @@ const About = () => {
               )}
             </button>
 
-            {/* Social Panel with Vertical Slide/Fade Animation */}
             <div
               className={`overflow-hidden transition-all duration-300 ${
                 open
@@ -128,23 +127,21 @@ const About = () => {
               }`}
             >
               <div className="flex flex-col items-center space-y-4">
-
-
                 {/* YouTube */}
                 <a
-                  href="https://www.youtube.com/@hacker_sheela"
+                title="Resume"
+                  href="/Yogesh-Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 hover:scale-110 transition-transform duration-200"
                 >
                   <Image
-                    src="/images/yt.png"
+                    src="/images/rs2.png"
                     alt="YouTube"
-                    width={32}
+                    width={36}
                     height={24}
                   />
                 </a>
-
 
                 {/* LinkedIn */}
                 <a
@@ -176,10 +173,6 @@ const About = () => {
                   />
                 </a>
 
-               
-
-                
-
                 {/* Twitter */}
                 <a
                   href="https://twitter.com/__Yogeshh"
@@ -195,7 +188,6 @@ const About = () => {
                   />
                 </a>
 
-
                 {/* Email */}
                 <a
                   href="mailto:tummayogesh1433@gmail.com"
@@ -208,10 +200,6 @@ const About = () => {
                     height={24}
                   />
                 </a>
-
-                
-                 
-
               </div>
             </div>
           </div>

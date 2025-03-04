@@ -24,7 +24,7 @@ const SkillDataProvider = ({ src, width, height, index, title }) => {
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
-      title={title} // added title attribute for hover tooltip
+      title={title} 
     >
       <Image src={src} width={width} height={height} alt="skill image" />
     </motion.div>

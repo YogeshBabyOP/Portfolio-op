@@ -19,7 +19,6 @@ const nameStyle = css`
 `;
 
 const Navbar = () => {
-  // Initially, no nav item is selected.
   const [activeNav, setActiveNav] = useState("about");
 
   const navItems = [

@@ -68,6 +68,39 @@ export const leetcode3 = [
   
 ]
 
+export const CodingEnvironment = [
+  {
+    skill_name: "Vs Code",
+    Image: "/images/vscode1.png",
+    width: 70,
+    height: 80,
+  },
+  {
+    skill_name: "Pycharm",
+    Image: "/images/python1.png",
+    width: 70,
+    height: 80,
+  },
+  {
+    skill_name: "Java IDE",
+    Image: "/images/java1.png",
+    width: 70,
+    height: 80,
+  },
+  {
+    skill_name: "Golang",
+    Image: "/images/go1.png",
+    width: 70,
+    height: 80,
+  },
+  {
+    skill_name: "Cursor App",
+    Image: "/images/cursor-app1.png",
+    width: 90,
+    height: 80,
+  },
+]
+
 
 
 export const Skill_data = [

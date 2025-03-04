@@ -5,9 +5,9 @@ import {
   useAnimation,
   useMotionValue,
 } from "framer-motion";
+import { Button } from "@headlessui/react";
 import Image from "next/image";
 
-// Generate sparkles with positions and delays.
 function generateSparkles(count) {
   return Array.from({ length: count }, () => ({
     left: Math.random() * 100,
@@ -16,7 +16,6 @@ function generateSparkles(count) {
   }));
 }
 
-// Memoized Sparkle component to avoid unnecessary re-renders.
 const Sparkle = React.memo(({ sparkle }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0 }}
@@ -47,24 +46,21 @@ const IntroBanner = () => {
   const controls = useAnimation();
   const rocketY = useMotionValue(0);
 
-  // Use current viewport height for numeric calculations.
   const viewportHeight =
     typeof window !== "undefined" ? window.innerHeight : 800;
 
-  // Generate sparkles only once.
   const sparkles = useMemo(() => generateSparkles(30), []);
 
   const rocketVariants = {
     initial: { y: 0, x: -45, opacity: 1 },
     launch: {
-      y: -viewportHeight, // animate upward to the top of the viewport
+      y: -viewportHeight,
       x: -45,
       opacity: 1,
       transition: { duration: 2, ease: "easeInOut" },
     },
   };
 
-  // Trigger rocket launch.
   const handleLaunch = () => {
     setRocketLaunched(true);
     controls.start("launch");
@@ -74,6 +70,8 @@ const IntroBanner = () => {
     <>
       <AnimatePresence>
         {showIntro && (
+
+          
           <motion.div
             key="intro"
             initial={{ opacity: 1 }}
@@ -140,7 +138,6 @@ const IntroBanner = () => {
                 y: rocketY, // bind the motion value
               }}
               onUpdate={() => {
-                // When the rocket reaches 60% upward (i.e. y <= -60% of viewport height)
                 if (!fadeOut && rocketY.get() <= -viewportHeight * 0.6) {
                   setFadeOut(true);
                 }
@@ -175,7 +172,7 @@ const IntroBanner = () => {
                   zIndex: 10000,
                 }}
               >
-                <button className="cta" onClick={handleLaunch}>
+                <Button className="cta" onClick={handleLaunch}>
                   Launch
                   <div className="star a"></div>
                   <div className="star b"></div>
@@ -211,7 +208,7 @@ const IntroBanner = () => {
                       d="M541.44 94.144L500.416 35.008l-45.696 59.136v29.504h89.024v-29.504zM459.456 288.64h88.96v88.896h-88.96zM459.456 467.456h88.96v88.96h-88.96zM459.456 634.176h88.96v88.896h-88.96zM364.928 788.736h277.76v44.352h-277.76z"
                     ></path>
                   </svg>
-                </button>
+                </Button>
               </div>
             )}
           </motion.div>

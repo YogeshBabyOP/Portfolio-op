@@ -12,7 +12,6 @@ const Projects = () => {
         My Projects
       </h1>
 
-      {/* 3 columns on md+ screens, 1 column on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-20 px-10">
         <ProjectCard
           src="/images/confetti.png"
@@ -60,7 +59,6 @@ const Projects = () => {
           githubLink="https://github.com/YogeshBabyOP/Musicc"
           demoLink="https://github.com/YogeshBabyOP"
         />
-        {/* Add more <ProjectCard /> components as needed */}
       </div>
     </div>
   );
