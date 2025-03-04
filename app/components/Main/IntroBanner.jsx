@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -66,12 +66,29 @@ const IntroBanner = () => {
     controls.start("launch");
   };
 
+  // Effect to disable or re-enable scrolling based on showIntro state
+  useEffect(() => {
+    const preventDefault = (e) => e.preventDefault();
+    if (showIntro) {
+      // Disable scrolling
+      document.body.style.overflow = "hidden";
+      document.addEventListener("touchmove", preventDefault, { passive: false });
+    } else {
+      // Re-enable scrolling when intro is finished
+      document.body.style.overflow = "auto";
+      document.removeEventListener("touchmove", preventDefault);
+    }
+    // Cleanup if component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+      document.removeEventListener("touchmove", preventDefault);
+    };
+  }, [showIntro]);
+
   return (
     <>
       <AnimatePresence>
         {showIntro && (
-
-          
           <motion.div
             key="intro"
             initial={{ opacity: 1 }}
@@ -135,7 +152,7 @@ const IntroBanner = () => {
                 left: "50%",
                 transform: "translateX(-50%)",
                 willChange: "transform, opacity",
-                y: rocketY, // bind the motion value
+                y: rocketY,
               }}
               onUpdate={() => {
                 if (!fadeOut && rocketY.get() <= -viewportHeight * 0.6) {
