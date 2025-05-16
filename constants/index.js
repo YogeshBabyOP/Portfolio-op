@@ -189,17 +189,17 @@ export const Skill_data = [
     {
       name: "Leetcode",
       src: "/images/leetcode.svg",
-      href: "https://leetcode.com/yogeshop2003",  // Replace with actual Discord link
+      href: "https://leetcode.com/visYogesh",  
     },
     {
       name: "Github",
       src: "/images/githubop.svg",
-      href: "https://github.com/YogeshBabyOP",  // Replace with actual Facebook link
+      href: "https://github.com/YogeshBabyOP", 
     },
     {
       name: "Codeforces",
       src: "/images/code-forces.svg",
-      href: "https://codeforces.com/profile/hackersheela",  // Replace with actual Instagram link
+      href: "https://codeforces.com/profile/hackersheela",  
     },
   ];
   
