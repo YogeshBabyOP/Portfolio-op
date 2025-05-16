@@ -194,7 +194,7 @@ export const Skill_data = [
     {
       name: "Github",
       src: "/images/githubop.svg",
-      href: "https://github.com/YogeshBabyOP", 
+      href: "https://github.com/visYogesh", 
     },
     {
       name: "Codeforces",
